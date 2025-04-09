@@ -106,7 +106,7 @@ into children's state keys as well.
 function atomFamily<T, P: Parameter>(
   options: AtomFamilyOptions<T, P>,
 ): P => RecoilState<T> {
-  const atomCache = cacheFromPolicy<P, RecoilState<T>>({
+  const atomCache = cacheFromPolicy<P, RecoilState<T>>( options.cachePolicyForParams_UNSTABLE ?? {
     equality: options.cachePolicyForParams_UNSTABLE?.equality ?? 'value',
     eviction: 'keep-all',
   });
