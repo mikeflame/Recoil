@@ -1,6 +1,6 @@
 {
   "name": "recoil-custom-fix",
-  "version": "0.0.4",
+  "version": "0.0.3",
   "private": false,
   "description": "Recoil - A state management library for React",
   "main": "cjs/index.js",
