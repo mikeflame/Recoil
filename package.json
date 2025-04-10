@@ -1,7 +1,7 @@
 {
   "name": "@mikeflame/recoil",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "description": "Recoil - A state management library for React",
   "main": "cjs/index.js",
   "module": "es/index.js",
