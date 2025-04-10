@@ -112,12 +112,10 @@ function selectorFamily<T, Params: Parameter>(
   const selectorCache = cacheFromPolicy<
     Params,
     RecoilState<T> | RecoilValueReadOnly<T>,
-  >(
-    options.cachePolicyForParams_UNSTABLE ?? {
-      equality: options.cachePolicyForParams_UNSTABLE?.equality ?? 'value',
-      eviction: 'keep-all',
-    },
-  );
+  >({
+    equality: options.cachePolicyForParams_UNSTABLE?.equality ?? 'value',
+    eviction: 'keep-all',
+  });
 
   return (params: Params) => {
     // Throw an error with selector key so that it is clear which
