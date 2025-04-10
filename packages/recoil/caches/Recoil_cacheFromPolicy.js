@@ -25,11 +25,11 @@ const stableStringify = require('recoil-shared/util/Recoil_stableStringify');
 
 const defaultPolicy: {
   equality: 'reference',
-  eviction: 'none',
+  eviction: 'keep-all',
   maxSize: number,
 } = {
   equality: 'reference',
-  eviction: 'none',
+  eviction: 'keep-all',
   maxSize: Infinity,
 };
 
